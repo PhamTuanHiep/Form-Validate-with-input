@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Times New Roman', Times, serif;
+}
+.main{
+  background-color: rgb(243, 241, 241);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.form{
+  min-height: 100vh;
+  width: 360px;
+  background-color: #fff;
+  margin: 30px auto;
+  padding: 32px 24px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgb(156, 153, 153);
+}
+.form .heading{
+  font-size: 22px;
+  text-align: center;
+}
+.form .desc{
+  font-size: 20px;
+  color: rgb(114, 112, 112);
+  margin:24px auto 0;
+  text-align: center;
+
+}
+.spacer{
+
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+.form-label,
+.form-message{
+  text-align: left;
+
+}
+.form-label{
+  font-size: 17px;
+  font-weight: 600;
+  display: block;
+  margin: 16px  8px;
+}
+.form-control{
+  width: 100%;
+  font-size: 16px 0 0;
+  padding: 9px 12px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid rgb(190, 188, 188);
+}
+.form-control:hover{
+  border-color: #1dbfaf;
+}
+.form-group.invalid .form-message{
+  color: red;
+  font-size: 12px;
+  padding-top: 4px;
+}
+.form-group.invalid .form-control{
+  outline: solid red  1px ;
+  outline-offset: -1px;
+  /* border: 1px  red  solid; */
+}
+
+#provines{
+  padding: 8px;
+  border-radius: 3px;
+}
+.gender div,
+.hobby div{
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.form-group.gender input,
+.form-group.hobby input{
+  margin:0px 8px 3px;
+}
+
+
+
+.form-submit{
+  background-color: #1dbfaf;
+  display: block;
+  height: 42px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+  margin: 32px auto 0;
+}
+.form-submit:hover{
+  cursor: pointer;
+  background-color: #1ac7b6;
+
+}
